@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700;800&family=Space+Grotesk:wght@500&display=swap');
+
+*,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 4rem;
+}
+
+html{
+  font-size: 16px;
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100vw;
+  height: 100%;
+}
+
+
+
+.container{
+  padding: 0rem 12rem;
+}
+
+.menu-icon-content {
+  display: none;
+}
+
+.logo{
+  width: 10rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/************** HEADER *************/
+
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+  padding-bottom: 1rem;
+}
+
+.navbar{
+  padding: 0 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+ul {
+  display: flex;
+}
+
+.header-info {
+  display: flex;
+}
+
+.header-info ul a{
+  list-style: none;
+  padding: .5rem 1rem;
+  margin: 0 .25rem;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-info ul a:hover {
+  background-color: rgb(57, 131, 57);
+}
+
+.logo-codigo{
+  display: none;
+  width: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+.enviar-correo{
+  font-size: 1rem;
+  padding: .8rem 1rem;
+  margin-left: .25rem;
+  background-color: rgb(57, 131, 57);
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+/************ Home ************/
+
+.home{
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.right-content{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.mensaje-texto{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.mensaje-nombre{
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 4.5rem;
+  font-weight: 100;
+  font-family: Hanken Grotesk;
+  letter-spacing: 7px;
+  margin: 1rem 0;
+  border-right: .3rem solid #18BDEC;
+  animation: blink 1.5s steps(1) infinite;
+  animation: typing 3s steps(11) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50%{
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+.mensaje-perfil{
+  font-size: 1.3rem;
+  color: grey;
+  font-style: italic;
+}
+
+.descargar-curriculum, .descargar-cv{
+  margin: 1.5rem 0;
+  color: rgb(198, 198, 45);
+}
+
+.descargar-curriculum{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descargar-cv{
+  background-color: rgb(32, 71, 32);
+  padding: .3rem;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.ir-trabajo{
+  margin-left: 1rem;
+  padding: .3rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(124, 124, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.foto-content{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.foto-perfil{
+  background-color: rgb(57, 131, 57);
+  width: 75%;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+/*********** ABOUT ***********/
+
+.about{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about-content{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about p{
+  text-align: center;
+  margin: 1rem;
+}
+
+.about-equipo, .about-info{
+  width: 45%;
+}
+
+.about-info{
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-info h2{
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.about-equipo img{
+  width: 100%;
+}
+.about-equipo p{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/********* TECNOLOGIAS *******/
+
+.tecnologias{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.tecnologias h2{
+  margin-top: 1rem;
+  padding-top: .3rem;
+  text-align: center;
+}
+.tecnologias h3{
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.tecnologias-content{
+  display: grid;
+  grid-template-columns: repeat(4, 15rem);
+  grid-template-rows: repeat(2, 15rem);
+  gap: 10px;
+  margin: auto;
+}
+
+.tecnologia-icon{
+  width: 100%;
+}
+
+.tecnologia-icon-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologia-icon-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(33, 105, 51);
+  padding: .5rem;
+}
+
+/********* PROXIMOS A ESTUDIAR *******/
+
+.a-estudiar{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-estudiar h2 {
+  margin: 2rem ; 
+  text-align: center;
+}
+
+.a-estudiar h3 {
+  padding: 0 0 7rem; 
+  text-align: center;
+}
+
+.a-estudiar span {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 .5rem;
+}
+
+.a-estudiar span b{
+  color: red;
+}
+
+.tec-react-native img, .tec-angular img {
+  width: 85%;
+}
+
+.tec-react-aprender, .tec-nextjs-aprender {
+  background-color: rgb(129, 164, 59);
+}
+
+/********* PORTAFOLIO ********/
+
+.portafolio{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+.portafolio h2{
+  text-align: center;
+}
+
+.portafolio h3{
+  text-align: center;
+  margin: 1rem 0 3rem;
+  font-style: italic;
+  color: rgb(189, 188, 188);
+}
+
+.portafolio-content{
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.portafolio-item{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(68, 51, 71);
+  border-radius: 10px;
+  color: black;
+  overflow: hidden;
+
+}
+
+.portafolio-item span {
+  margin: auto;
+  height: 1.3rem;
+  color: rgb(216, 216, 216);
+}
+
+.celular {
+  width: 87px;
+  margin: 0 106px;
+}
+.escritorio{
+  width: 300px;
+}
+
+.imagenes{
+  display: flex;
+  height: 80%;
+  animation: slide 6s infinite alternate ease-in-out;
+
+}
+
+@keyframes slide {
+  0% {margin-left: 0%;}
+  50% {margin-left: 0%;}
+
+  55% {margin-left: -100%;}
+  100% {margin-left: -100%;}
+}
+
+.pagina{
+  overflow: hidden;
+}
+
+.tecnologias-proyecto{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  padding: .3rem;
+  background-color: rgba(70, 59, 94, 0.781);
+  border-radius: 10px;
+  transition: all .4s ease-in-out 0s;
+}
+
+.tecnologias-proyecto img{
+  width: 3rem;
+}
+
+.pagina:hover .tecnologias-proyecto{
+  margin-top: -6rem;
+
+}
+
+footer{
+  margin-top: 5rem;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222525;
+}
+
+footer h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer a{
+  display: flex;
+  align-items: center;
+  margin: .5rem;
+}
+.icon-contacto{
+  width: 2rem;
+  margin-right: .5rem;
+}
+
+.facebook{
+  display: flex;
+  margin: .5rem;
+}
+
+.facebook a {
+  margin: 0;
+}
+
+.messenger{
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 2rem auto 1.5rem;
+  }
+
+  .header{
+    position: absolute;
+  }
+  
+  .navbar{
+    padding: 0 2rem;
+    margin-top: 0;
+  }  
+  
+  .header-info{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(57, 131, 57);
+    justify-content: center;
+    align-items: center;
+    transform: translate(110%);
+    z-index: 1;
+  }
+
+  .header-info ul{
+    flex-direction: column;
+  }
+
+  .header-info{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(57, 131, 57);
+    justify-content: center;
+    align-items: center;
+    transform: translate(110%);
+    transition: transform .7s ease-in-out;
+    z-index: 1;
+  }
+
+  .menu-icon-content{
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 131, 57);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10rem;
+    z-index: 1;
+    right: 1rem;
+  }
+  
+  .menu-icon{
+    width: 2rem;
+    z-index: 3;
+  }
+  .menu-cerrar-icon{ 
+    width: 2rem;
+    z-index: 3;
+  }
+
+
+  .header-info ul li {
+    margin: 1.5rem 0;
+  }
+  
+  .header-info ul li:hover {
+    background-color: unset;
+  }
+
+  .logo-codigo{
+    display: block;
+    width: 5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .enviar-correo{
+    background-color: rgb(19, 139, 19);
+    margin-top: 1rem;
+  }
+/********** HOME **********/
+  .home{
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 0;
+  }
+
+  .right-content{
+    padding-top: 2rem;
+    width: 80%;
+  }
+
+  .foto-content{
+    max-width: 275px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .mensaje-perfil{
+    text-align: center;
+  }
+
+  .mensaje-nombre{
+    margin: .5rem 0;
+  }
+
+  /********* ABOUT *******/
+  .about {
+    margin-top: -1rem;
+    height: auto;
+  }
+
+  .about-content{
+    flex-direction: column;
+    padding: .3rem;
+  }
+  
+  .about-equipo, .about-info{
+    width: 95%;
+    padding: .5rem;
+  }
+
+  .about-info {
+    height: auto;
+  }
+  
+  .about-info h2{
+    margin-bottom: 2.5rem;
+  }
+  
+  .about-equipo{
+    margin: 2.5rem 0;
+  }
+
+  .about-content p{
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  
+  /********* TECNOLOGIAS *******/
+
+  .tecnologias{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tecnologias h2{
+    margin: 0 0 1rem;
+    padding: 0;
+  }
+  .tecnologias h3{
+    padding: 0 1rem;
+    margin: 1rem 0 2rem;
+  }
+
+  .tecnologias-content{
+    width: 90%;
+    grid-template-columns: repeat(2, 48.5%);
+    grid-template-rows: repeat(4, auto);
+    margin: 0 auto 0;
+  }
+
+  .tecnologia-icon-content{
+    max-width: 200px;
+  }
+
+  .a-estudiar span{
+    margin: 1.5rem 0;
+  }
+
+  .a-estudiar h2 {
+    margin: 2rem 1rem .5rem;
+  }
+  
+  .a-estudiar h3 {
+    margin: 1rem;
+    padding: 0;
+  }
+
+  
+  /********** PORTAFOLIO *********/
+  .portafolio{
+    width: 100%;
+    margin-top: 3rem;
+    padding-top: 0;
+  }
+
+  .portafolio-content{
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
+    gap: 5px;
+  }
+
+  .portafolio-item{
+    margin: auto;
+  }
+
+  .escritorio{
+    display: none;
+  }
+
+  .celular{
+    width: 100%;
+    margin: 0;
+  }
+  
+  .imagenes{
+    animation: none;
+    height: auto;
+  }
+
+  .portafolio-item span {
+    height: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagina:hover .tecnologias-proyecto{
+    margin-top: 0;
+  }
+
+  .tecnologias-proyecto{
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 992px) {
+  .container{
+    padding: 0 2rem;
+  }
+
+  .mensaje-nombre{
+    font-size: 2.5rem;
+  }
+
+
+}
+
+.ocultar{
+  display: none;
+}
+
+.mostrar-menu{
+  display: flex;
+  transform: translatex(0);
+  transition: .8s;
+}

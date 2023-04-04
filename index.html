@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700;800&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="assets/Logo.png"/>
+    
+    <title>Oscar Garcia</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <span>
+          <img src="./assets/Logo.png" alt="Logo" class="logo" />
+        </span>
+        <div class="header-info">
+          <a href="#inicio"><img src="assets/codigo.png" alt="logo codigo" class="logo-codigo"></a>
+          <ul>
+            <a href="#inicio"><li>Inicio</li></a>
+            <a href="#about"><li></li>Sobre mí</li></a>
+            <a href="#tecnologias"><li></li>Tecnologías</li></a>
+            <a href="#intereses"><li></li>Intereses</li></a>
+            <a href="#portafolio"><li></li>Portafolio</li></a>
+            <a href="#contacto"><li></li>Contacto</li></a>
+          </ul>
+          <button class="enviar-correo">
+            <a
+              href="mailTo:oscaromar_258@hotmail.com"
+              aria-label="Enviar un correo"
+              >Envíame un correo</a
+            >
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="menu-icon-content">
+        <img src="./assets/menu.png" alt="menu" class="menu-btn menu-icon" />
+        <img
+          id="cerrar"
+          src="./assets/close.png"
+          alt="cerrar menu"
+          class="menu-btn menu-cerrar-icon ocultar"
+        />
+      </div>
+      <!-- HEADER -->
+      <!-- INICIO -->
+      <section id="inicio" class="home">
+        <div class="left-content">
+          <div class="mensaje">
+            <div class="mensaje-texto">
+              <p>Hola, me llamo</p>
+            </div>
+          </div>
+          <h1 class="mensaje-nombre">Oscar Garcia.</h1>
+          <p class="mensaje-perfil">Desarrollador Web Front-End</p>
+          <div class="descargar-curriculum">
+            <a class="descargar-cv" download="Curriculum-Oscar-Garcia.pdf" href="./assets/Curriculum-Oscar-Garcia.pdf">Descargar CV.</a>
+            <a class="ir-trabajo" href="#portafolio">Mi trabajo</a>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="foto-content">
+            <img src="./assets/foto-perfil.png" alt="Foto de perfil" class="foto-perfil">
+          </div>
+        </div>
+      </section>
+      <!-- QUIEN SOY -->
+      <section id="about" class="about">
+        <div class="about-content">
+          <div class="about-info">
+            <h2>Sobre mí</h2>
+            <p>Mi nombre es Oscar Garcia, tengo 27 años y soy Desarrollador Web con un enfoque en el Front-end.</p>
+            <p>Estoy en busca de una oportunidad para Iniciar en el mundo laboral y demostrar mis habilidades a la vez que adquiero nuevos conocimientos, experiencia y amplío mi stack de tecnologías aprendiendo sobre Back-end.</p>
+            <p>Tengo un particular interés en estudiar inglés, soy consciente de que este mundo demanda un nivel alto y trabajaré en ello.</p>
+            <p>Estuve estudiando informática y aunque no pude terminar, espero en el futuro poder retomar la carrera y concluirla.</p>
+          </div>
+          <div class="about-equipo">
+            <img src="assets/equipo.jpg" alt="Equipo propio">
+            <p>Cuento con equipo propio para trabajar si la vacante fuese remota.</p>
+          </div>
+        </div>
+      </section>
+      <!-- TECNOLOGIAS -->
+      <section id="tecnologias" class="tecnologias">
+        <h2>Tecnologías</h2>
+        <div class="tecnologias-content">
+          <div class="tecnologia-icon-item tec-html">
+            <img class="tecnologia-icon html" src="assets/html.png" alt="html">
+          </div>
+          <div class="tecnologia-icon-item tec-css">
+            <img class="tecnologia-icon css" src="assets/css.png" alt="css">
+          </div>
+          <div class="tecnologia-icon-item tec-javascript">
+            <img class="tecnologia-icon javascript" src="assets/javascript.png" alt="javascript">
+          </div>
+          <div class="tecnologia-icon-item tec-react">
+            <img class="tecnologia-icon react" src="assets/react.png" alt="react">
+          </div>
+          <div class="tecnologia-icon-item tec-nextjs">
+            <img class="tecnologia-icon nextjs" src="assets/nextjs.png" alt="nextjs">
+          </div>
+          <div class="tecnologia-icon-item tec-git">
+            <img class="tecnologia-icon git" src="assets/git.png" alt="git">
+          </div>
+          <div class="tecnologia-icon-item tec-github">
+            <img class="tecnologia-icon github" src="assets/github.png" alt="github">
+          </div>
+          <div class="tecnologia-icon-item tec-vsc">
+            <img class="tecnologia-icon vsc" src="assets/visualStudio.png" alt="visual studio code">
+          </div>
+        </div>
+        <h3>/***** Estudiando Next.js, mejorando mis prácticas con React *****/</h3>
+      </section>
+      <!-- PRÓXIMOS A ESTUDIAR -->
+      <section id="intereses" class="a-estudiar">
+        <h2>Mis intereses para aprender en el futuro</h2>
+        <span><b>INGLÉS!!!!</b> <small><small>Es una de mis prioridades a corto-mediano plazo.</small></small></span>
+        <div class="tecnologias-content">
+          <div class="tecnologia-icon-item tec-express">
+            <img class="tecnologia-icon express" src="assets/express.png" alt="express">
+          </div>
+          <div class="tecnologia-icon-item tec-db">
+            <img class="tecnologia-icon db" src="assets/db.png" alt="bases de datos">
+          </div>
+          <div class="tecnologia-icon-item tec-react-native">
+            <img class="tecnologia-icon react-native" src="assets/reactnative.png" alt="React Native">
+          </div>
+          <div class="tecnologia-icon-item tec-angular">
+            <img class="tecnologia-icon angular" src="assets/angular.png" alt="angular">
+          </div>
+          <div class="tecnologia-icon-item tec-nextjs-aprender">
+            <img class="tecnologia-icon nextjs-aprender" src="assets/nextjs.png" alt="nextjs">
+          </div>
+          <div class="tecnologia-icon-item tec-react-aprender">
+            <img class="tecnologia-icon react-aprender" src="assets/react.png" alt="react">
+          </div>
+          <div class="tecnologia-icon-item tec-sass">
+            <img class="tecnologia-icon sass" src="assets/sass.png" alt="sass">
+          </div>
+          <div class="tecnologia-icon-item tec-typescript">
+            <img class="tecnologia-icon typescript" src="assets/typescript.png" alt="typescript">
+          </div>
+        </div>
+        <h3>Siempre abierto a nuevas tecnologías</h3>
+      </section>
+      <!-- PORTAFOLIO -->
+      <section id="portafolio" class="portafolio">
+        <h2>Algunas de mis prácticas</h2>
+        <h3>Siempre priorizando el responsive design</h3>
+        <div class="portafolio-content">
+          <a class="pagina" href="https://oscaromargn.github.io/practica-peliculas-react/" target="_blank">
+            <div class="portafolio-item">
+              <div class="imagenes">
+                <img src="assets/peliculas-escritorio.png" class="proyecto-img escritorio" alt="">
+                <img src="assets/peliculas-celular.jpg" class="proyecto-img celular" alt="">
+              </div>
+              <span>Página de películas</span>
+            </div>
+            <div class="tecnologias-proyecto">
+              <img src="./assets/html.png" alt="html">
+              <img src="./assets/css.png" alt="css">
+              <img src="./assets/javascript.png" alt="css">
+              <img src="./assets/react.png" alt="react">
+            </div>
+          </a>
+          <a class="pagina" href="https://oscaromargn.github.io/rompecabezas/" target="_blank">
+            <div class="portafolio-item">
+              <div class="imagenes">
+                <img src="assets/rompecabezas-escritorio.png" class="proyecto-img escritorio" alt="">
+                <img src="assets/rompecabezas-celular.jpg" class="proyecto-img celular" alt="">
+              </div>
+              <span>Juego de rompecabezas</span>
+            </div>
+            <div class="tecnologias-proyecto">
+              <img src="./assets/html.png" alt="html">
+              <img src="./assets/css.png" alt="css">
+              <img src="./assets/javascript.png" alt="css">
+            </div>
+          </a>
+          <a class="pagina" href="https://oscaromargn.github.io/lista-tareas/" target="_blank">
+            <div class="portafolio-item">
+              <div class="imagenes">
+                <img src="assets/lista-tareas-escritorio.png" class="proyecto-img escritorio" alt="">
+                <img src="assets/lista-tareas-celular.jpg" class="proyecto-img celular" alt="">
+              </div>
+              <span>Lista de tareas</span>
+            </div>
+            <div class="tecnologias-proyecto">
+              <img src="./assets/html.png" alt="html">
+              <img src="./assets/css.png" alt="css">
+              <img src="./assets/javascript.png" alt="css">
+              <img src="./assets/react.png" alt="react">
+            </div>
+          </a>
+          <a class="pagina" href="https://oscaromargn.github.io/crud-react/" target="_blank">
+            <div class="portafolio-item">
+              <div class="imagenes">
+                <img src="assets/crud-react-escritorio.png" class="proyecto-img escritorio" alt="">
+                <img src="assets/crud-react-celular.jpg" class="proyecto-img celular" alt="">
+              </div>
+              <span>C.R.U.D.</span>
+            </div>
+            <div class="tecnologias-proyecto">
+              <img src="./assets/html.png" alt="html">
+              <img src="./assets/css.png" alt="css">
+              <img src="./assets/javascript.png" alt="css">
+              <img src="./assets/react.png" alt="react">
+            </div>
+          </a>
+          <a class="pagina" href="https://oscaromargn.github.io/frontend-mentor-interactive-card/" target="_blank">
+            <div class="portafolio-item">
+              <div class="imagenes">
+                <img src="assets/tarjeta-credito-escritorio.png" class="proyecto-img escritorio" alt="">
+                <img src="assets/tarjeta-credito-celular.jpg" class="proyecto-img celular" alt="">
+              </div>
+              <span>Frontend Mentor tarjeta de crédito</span>
+            </div>
+            <div class="tecnologias-proyecto">
+              <img src="./assets/html.png" alt="html">
+              <img src="./assets/css.png" alt="css">
+              <img src="./assets/javascript.png" alt="css">
+            </div>
+          </a>
+          <a class="pagina" href="https://oscaromargn.github.io/frontend-mentor-article-preview/" target="_blank">
+            <div class="portafolio-item">
+              <div class="imagenes">
+                <img src="assets/tarjeta-articulo-escritorio.png" class="proyecto-img escritorio" alt="">
+                <img src="assets/tarjeta-articulo-celular.jpg" class="proyecto-img celular" alt="">
+              </div>
+              <span>Frontend Mentor tarjeta de artículo</span>
+            </div>
+            <div class="tecnologias-proyecto">
+              <img src="./assets/html.png" alt="html">
+              <img src="./assets/css.png" alt="css">
+              <img src="./assets/javascript.png" alt="css">
+            </div>
+          </a>
+          <a class="pagina" href="https://oscaromargn.github.io/frontend-mentor-results-summary/" target="_blank">
+            <div class="portafolio-item">
+              <div class="imagenes">
+                <img src="assets/results-summary-escritorio.png" class="proyecto-img escritorio" alt="">
+                <img src="assets/results-summary-celular.jpg" class="proyecto-img celular" alt="">
+              </div>
+              <span>Frontend Mentor resultados</span>
+            </div>
+            <div class="tecnologias-proyecto">
+              <img src="./assets/html.png" alt="html">
+              <img src="./assets/css.png" alt="css">
+              <img src="./assets/javascript.png" alt="css">
+            </div>
+          </a>
+          <a class="pagina" href="https://oscaromargn.github.io/frontend-mentor-social-proof/" target="_blank">
+            <div class="portafolio-item">
+              <div class="imagenes">
+                <img src="assets/social-proof-escritorio.png" class="proyecto-img escritorio" alt="">
+                <img src="assets/social-proof-celular.jpg" class="proyecto-img celular" alt="">
+              </div>
+              <span>Frontend Mentor sección social</span>
+            </div>
+            <div class="tecnologias-proyecto">
+              <img src="./assets/html.png" alt="html">
+              <img src="./assets/css.png" alt="css">
+              <img src="./assets/javascript.png" alt="css">
+            </div>
+          </a>
+          <a class="pagina" href="https://oscaromargn.github.io/buscador-useMemo/" target="_blank">
+            <div class="portafolio-item">
+              <div class="imagenes">
+                <img src="assets/buscador-escritorio.png" class="proyecto-img escritorio" alt="">
+                <img src="assets/buscador-celular.jpg" class="proyecto-img celular" alt="">
+              </div>
+              <span>Buscador</span>
+            </div>
+            <div class="tecnologias-proyecto">
+              <img src="./assets/html.png" alt="html">
+              <img src="./assets/css.png" alt="css">
+              <img src="./assets/javascript.png" alt="css">
+              <img src="./assets/react.png" alt="react">
+            </div>
+          </a>
+        </div>
+    </section>
+      <!-- FOOTER -->
+    </main>
+    <footer id="contacto">
+      <h2>Contacto</h2>
+      <div class="contacto">
+        <a href="https://wa.me/5583917661" target="_blank"><img class="icon-contacto" src="./assets/whatsapp-logo.png" alt="whatsapp"> +52 5583917661</a>
+        <div class="facebook">
+          <a href="https://www.facebook.com/oscaromar.garcianavarro" target="_blank"><img class="icon-contacto" src="./assets/facebook-logo.png" alt="facebook"></a>
+          <a class="messenger" href="https://m.me/oscaromar.garcianavarro" target="_blank">Envíame un mensaje por Messenger</a> 
+        </div>
+        <a href="mailTo:oscaromar_258@hotmail.com"><img src="assets/correo-logo.png" class="icon-contacto" alt="facebook">oscaromar_258@hotmail.com</a>
+      </div>
+    </footer>
+  </body>
+  <script src="scripts.js"></script>
+</html>
