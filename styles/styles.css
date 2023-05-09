@@ -101,6 +101,10 @@ ul {
   font-weight: 700;
 }
 
+.enviar-correo:hover{
+  background-color: rgb(48, 108, 48);
+}
+
 /************ Home ************/
 
 .home{
@@ -197,9 +201,10 @@ ul {
 
 .foto-perfil{
   background-color: rgb(57, 131, 57);
-  width: 75%;
+  width: 50%;
   padding: 1rem;
   border-radius: 50%;
+  margin-right: 3rem;
 }
 
 /*********** ABOUT ***********/
@@ -296,6 +301,10 @@ ul {
   padding: .5rem;
 }
 
+.tec-nextjs{
+  background-color: red;
+}
+
 /********* PROXIMOS A ESTUDIAR *******/
 
 .a-estudiar{
@@ -330,7 +339,7 @@ ul {
   width: 85%;
 }
 
-.tec-react-aprender, .tec-nextjs-aprender {
+.tec-react-aprender {
   background-color: rgb(129, 164, 59);
 }
 
@@ -577,6 +586,11 @@ footer a{
     max-width: 275px;
     margin: auto;
     justify-content: center;
+  }
+
+  .foto-perfil{
+    margin-right: 0;
+    width: 75%;
   }
 
   .mensaje-perfil{
