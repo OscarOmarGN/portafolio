@@ -16,8 +16,8 @@ html{
 }
 
 body{
-  /* background-color: black;
-  color: white; */
+  background-color: black;
+  color: white;
   font-family: sans-serif;
   width: 100vw;
   height: 100%;
@@ -369,8 +369,11 @@ ul {
 }
 
 .portafolio-content{
+  width: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .boton-seccion-portafolio{
@@ -538,16 +541,6 @@ footer a{
 
 .messenger{
   margin: 0;
-}
-
-.claro{
-  background-color: rgb(226, 226, 226);
-  color: black;
-}
-
-.oscuro{
-  background-color: black;
-  color: white;
 }
 
 .ocultar{
@@ -766,13 +759,16 @@ footer a{
     padding-top: 0;
   }
 
-  .portafolio-content{
-    width: 100vw;
+  .seccion-desarrollo-web{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: auto;
     gap: 5px;
   }
+
+  /* .portafolio-content{
+    margin: auto;
+  } */
 
   .seccion-diseño-ux{
     width: 100vw;
