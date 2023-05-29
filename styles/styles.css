@@ -766,10 +766,6 @@ footer a{
     padding-top: 0;
   }
 
-  .portafolio-content{
-
-  }
-
   .seccion-desarrollo-web{
     width: 100vw;
     grid-template-columns: repeat(3, 1fr);
